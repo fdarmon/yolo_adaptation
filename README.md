@@ -4,14 +4,14 @@
 Implementation using Tensorflow and Python of [YOLO algorithm](https://pjreddie.com/darknet/yolo/) for object detection on single channel images.
 
 ## How to use it
-The program can be launched from a command line with a few arguments (`python main.py --help` for a more detailled explanation).
-- There are three action possibles for now: 
+The program can be launched from a command line with a few arguments (`python main.py --help` for a more detailed explanation).
+- There are three possibles actions for now: 
   - train : Training of the network given a dataset, batch size, learning rate etc. 
   - test : Test a single image and save an image `prediction.png` in the working directory.
   - score : Performs some scoring of the model given a labelled test dataset (see help for more details).
 
 - A dataset is a txt file with a path to one training image (png or jpeg) at each line. For each image `/path/img0.png` there must be a label file `/path/img0.txt`. 
-- Each label file is formatted as follow:
+- Each label file is formated as follow:
   - One line per bounding box.
   - Each line is  `t i j h w` where `t` is the type of the object (for now there is only class 0 possible since the detector performs no classification betweem detected objects), `i,j` are the coordinates (matrix convention) of the center of the bounding box and `h,w` its height and width. Each of these value is relative to the image size: between 0 and 1.  
 
