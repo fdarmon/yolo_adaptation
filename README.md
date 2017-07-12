@@ -19,4 +19,4 @@ The program can be launched from a command line with a few arguments (`python ma
 - The output of the network is a modified version of the two versions of YOLO : instead of giving the coordinate of the center of the bounding boxes and their dimensions relative to the whole image, our network gives the coordinate of the center of the bounding boxes *relative to the cell size* and the dimension *relative to the whole image*. That way, each of the five outputs of an bounding box can be scaled between 0 and 1.
 - The loss function is simpler as the classification part is dropped.
 - In the loss function, the `height,width` part of the output is treated differently from the `i,j` part with a different scaling factor and not a square root because at first, the network was designed to find constant size objects in the image. 
-- The network archtecture is way smaller and the one in the repository is not the one that was used in our problem.
+- The network archtecture is way smaller.
