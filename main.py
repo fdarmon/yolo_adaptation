@@ -198,7 +198,6 @@ if __name__ == '__main__':
         run_test_big()
     elif FLAGS.action=='score':
         run_scoring()
-    elif FLAGS.action=='generate_img':
-        run_generate_img()
+
     else :
         print('Invalid action')
