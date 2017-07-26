@@ -3,11 +3,7 @@ import tensorflow as tf
 
 from tensorflow.python.framework import ops
 
-
 N_CHANNELS=1
-
-height_mine=300 # constant for sie of the mine files when add_patch
-width_mine=80
 
 class Data_manager:
     
