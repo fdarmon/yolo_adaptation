@@ -1,4 +1,3 @@
-# Not published online yet
 # YOLO adaptation
 
 Implementation using Tensorflow and Python of [YOLO algorithm](https://pjreddie.com/darknet/yolo/) for object detection on single channel images.
